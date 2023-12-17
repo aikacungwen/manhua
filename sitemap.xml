@@ -33,6 +33,14 @@
         <priority>0.2</priority>
     </url>
 
+    <!-- Daftar Halaman b (ditempatkan di bagian bawah) -->
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/b/nonton-donghua.html</loc>
+        <lastmod>2023-12-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
     <!-- Daftar Halaman P (ditempatkan di bagian bawah) -->
     <url>
         <loc>https://manhua.aikacungwen.biz.id/p/416.html</loc>
