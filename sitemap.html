@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sitemap</h1>
+
+    <ul id="sitemap-list"></ul>
+
+    <script>
+        // Mengambil sitemap.xml dan membuat elemen list dari setiap URL
+        fetch('https://manhua.aikacungwen.biz.id/sitemap.xml')
+            .then(response => response.text())
+            .then(data => {
+                // Parsing XML
+                var parser = new DOMParser();
+                var xmlDoc = parser.parseFromString(data, 'text/xml');
+
+                // Mendapatkan semua elemen <loc> dari XML
+                var locElements = xmlDoc.querySelectorAll('loc');
+
+                // Membuat elemen list dari setiap URL
+                var sitemapList = document.getElementById('sitemap-list');
+                locElements.forEach(function (locElement) {
+                    var listItem = document.createElement('li');
+                    var link = document.createElement('a');
+                    link.href = locElement.textContent;
+                    link.textContent = locElement.textContent;
+                    listItem.appendChild(link);
+                    sitemapList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching sitemap.xml:', error));
+    </script>
+
+</body>
+</html>
+

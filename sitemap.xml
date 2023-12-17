@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Beranda -->
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Halaman Post -->
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/post.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Favicon.ico -->
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/favicon.ico</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <!-- Favicon.jpg -->
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/favicon.jpg</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <!-- Daftar Halaman P (ditempatkan di bagian bawah) -->
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/p/416.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/p/417.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+     <url>
+        <loc>https://manhua.aikacungwen.biz.id/p/418.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+     <url>
+        <loc>https://manhua.aikacungwen.biz.id/p/419.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+     <url>
+        <loc>https://manhua.aikacungwen.biz.id/p/420.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+     <url>
+        <loc>https://manhua.aikacungwen.biz.id/p/421.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+     <url>
+        <loc>https://manhua.aikacungwen.biz.id/p/422.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+     <url>
+        <loc>https://manhua.aikacungwen.biz.id/p/423.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+     <url>
+        <loc>https://manhua.aikacungwen.biz.id/p/424.html</loc>
+        <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- ... (entri lainnya) ... -->
+
+</urlset>
