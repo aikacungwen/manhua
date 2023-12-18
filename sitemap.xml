@@ -40,7 +40,25 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    
+    <!-- Daftar Halaman Sdonghua (ditempatkan di bagian bawah) -->
+   <url>
+        <loc>https://manhua.aikacungwen.biz.id/Sdonghua/Wu-Dong-Qian-Kun-Season-4-Episode-1-Subtitle-Indonesia.html</loc>
+    </url>
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/Sdonghua/Wu-Dong-Qian-Kun-Season-4-Episode-2-Subtitle-Indonesia.html</loc>
+    </url>
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/Sdonghua/Wu-Dong-Qian-Kun-Season-4-Episode-3-Subtitle-Indonesia.html</loc>
+    </url>
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/Sdonghua/Wu-Dong-Qian-Kun-Season-4-Episode-4-Subtitle-Indonesia.html</loc>
+    </url>
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/Sdonghua/Wu-Dong-Qian-Kun-Season-4-Episode-5-Subtitle-Indonesia.html</loc>
+    </url>
+    <url>
+        <loc>https://manhua.aikacungwen.biz.id/bio/bio.html</loc>
+    </url>
     <!-- Daftar Halaman P (ditempatkan di bagian bawah) -->
     <url>
         <loc>https://manhua.aikacungwen.biz.id/p/416.html</loc>
