@@ -202,7 +202,82 @@ a {
     font-weight: bold;
 }
 
-  
+  /* Style for the 10-star rating */
+.stars {
+    display: inline-block;
+    font-size: 25px; /* Adjust the font size for the star */
+    line-height: 1; /* Set line-height to 1 for better vertical alignment */
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 0, 0.7); /* Yellow with transparency */
+    padding: 10px;
+    border-radius: 5px;
+    color: black; /* Text color for better visibility */
+}
+
+/* Add margin-bottom to the .movie-details */
+.movie-details {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    background-color: #222; /* Set the background color of the container */
+    color: yellow; /* Set the text color to yellow */
+    margin-bottom: 40px; /* Adjust the margin-bottom value as needed */
+}
+
+/* Or add margin-bottom to the .poster-container */
+.poster-container {
+    width: 200px; /* Set the width of the container */
+    margin: 0 auto; /* Center the container */
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 40px; /* Adjust the margin-bottom value as needed */
+}
+
+
+
+.poster {
+    width: 100%; /* Set the width to 100% */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image within the container */
+}
+
+/* Style for the movie rating label */
+.rating-label {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+        /* Style for the movie poster */
+.poster-container {
+    width: 200px; /* Set the width of the container */
+    margin: 0 auto; /* Center the container */
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+.poster {
+    width: 100%; /* Set the width to 100% */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image within the container */
+}
+
+
+        /* Style for the movie rating label */
+        .rating-label {
+            color: white;
+            font-size: 18px;
+            margin-top: 10px;
+        }
  
   
     </style>
@@ -311,7 +386,16 @@ a {
         </table>
     </div>
 </main>
-
+<!-- Movie Details Section -->
+    <div class="movie-details">
+        <div class="poster-container">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8yyDblKUCfMe4b0mDg4p_fgEcl0UkPyETee7fN9qazDjKCDFq_HJriT5RBbEf1XTWWOyy7fdzbin5nzAVr6FNpucVfZf2BAxzeMR4RXqDEhF2E4GTs3Bcod6qv_jiGvot16VcKBHH4j_YrFlmYZVY0CNtm7dVuGmcjCe9VnuL2RZOKDMRLVAHMFS4RKnu/w600/006T5GTEgy1hgoqjzoo40j32o04qo7wk%20%282%29.jpg" alt="Movie Poster" class="poster">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="rating-label">Rating Tencent</div>
+        </div>
+        <h2>Wu Dong Qian Kun Season 4</h2>
+    </div>
+    <br/><br/>
 <footer>
         <p>&copy; 2023 Aikacungwen Manhua.</p>
          <p>Theme By : <a href="https://aikacungwen.online/" style="color: #fff;">@Aikacungwen</a>.</p>
