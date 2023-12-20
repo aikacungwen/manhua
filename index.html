@@ -96,16 +96,28 @@
             transform: scale(1.1);
         }
 
-        .read-now {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #fff;
-            padding: 5px 10px;
-            border-radius: 5px;
-            color: #000;
-        }
+       .read-now {
+    display: inline-block;
+    font-size: 12px; 
+    line-height: 1;
+    position: absolute;
+    z-index: 1;
+    bottom: 10px; /* Sesuaikan nilai bottom sesuai dengan kebutuhan Anda */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    color: black; /* Text color for better visibility */
+    width: calc(100% - 20px); /* Menggunakan calc() untuk menghitung lebar sesuai kebutuhan */
+    max-width: 180px; /* Menyamakan dengan lebar cover-container */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
 
         footer {
             position: fixed;
@@ -234,7 +246,7 @@
             <a href="post.html">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEIcR_ilwg-jq3AujbufvALhuSqg0iAAATA1jo6-p8LSJ2V4S44FEnJtUWe8a7MNmtK_xtIK2TCS5q1kKvO4rKGXMkGI8NXt6xm5ydDgFWdSOzUyUJ2il2FkH0uishvyDovNcgGJVJOmxnR0NoNraUDdso1xVpsQLYxS42aQP-i_jhv3J651cSDOfwmjY/s1047/IMG_20231012_064551_933.jpg" alt="Cover Komik">
                 <div class="read-now">
-                    Baca Manhua BTTH
+                    Manhua BTTH
                 </div>
             </a>
         </div>
