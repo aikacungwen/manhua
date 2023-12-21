@@ -183,5 +183,11 @@
     </url>
 
     <!-- ... (entri lainnya) ... -->
-
+    <url>
+    <loc>https://manhua.aikacungwen.biz.id/sl120/Full.html</loc>
+    <lastmod>2023-12-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    
 </urlset>
