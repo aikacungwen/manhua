@@ -14,23 +14,26 @@
       text-align: center;
     }
 
+    .upload-container {
+      text-align: center;
+    }
+
     input[type="file"] {
       display: none;
     }
 
     label {
-      display: inline-block;
+      display: block;
       background-color: #4CAF50;
       color: white;
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
       border-radius: 5px;
+      margin-bottom: 10px;
     }
 
     button {
-      display: block;
-      margin: 10px auto;
       padding: 10px 20px;
       background-color: #4CAF50;
       color: white;
@@ -54,14 +57,17 @@
 <body>
   <h1>Image Upload Example</h1>
 
-  <!-- Input file and button to trigger the image upload -->
-  <input type="file" id="imageInput" accept="image/*">
-  <label for="imageInput">Choose Image</label>
-  <button onclick="uploadImage()">Upload Image</button>
+  <!-- Container for the image upload section -->
+  <div class="upload-container">
+    <!-- Input file and button to trigger the image upload -->
+    <label for="imageInput">Choose Image</label>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="uploadImage()">Upload Image</button>
 
-  <!-- Display the uploaded image and direct link (optional) -->
-  <div id="uploadedImage"></div>
-  <div id="directLink"></div>
+    <!-- Display the uploaded image and direct link (optional) -->
+    <div id="uploadedImage"></div>
+    <div id="directLink"></div>
+  </div>
 
   <script>
     function uploadImage() {
