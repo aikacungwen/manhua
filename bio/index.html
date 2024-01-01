@@ -12,13 +12,15 @@
   <input type="file" id="imageInput" accept="image/*">
   <button onclick="uploadImage()">Upload Image</button>
 
-  <!-- Display the uploaded image (optional) -->
+  <!-- Display the uploaded image and direct link (optional) -->
   <div id="uploadedImage"></div>
+  <div id="directLink"></div>
 
   <script>
     function uploadImage() {
       const imageInput = document.getElementById('imageInput');
       const uploadedImage = document.getElementById('uploadedImage');
+      const directLink = document.getElementById('directLink');
 
       // Check if a file is selected
       if (imageInput.files.length > 0) {
@@ -33,8 +35,11 @@
         })
         .then(response => response.json())
         .then(data => {
-          // Handle the successful upload, e.g., display the uploaded image
+          // Handle the successful upload
           uploadedImage.innerHTML = `<img src="${data.data.url}" alt="Uploaded Image">`;
+
+          // Display the direct link to the uploaded image
+          directLink.innerHTML = `Direct Link: <a href="${data.data.url}" target="_blank">${data.data.url}</a>`;
         })
         .catch(error => {
           // Handle errors during the upload
