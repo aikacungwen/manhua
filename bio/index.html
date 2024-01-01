@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImgBB Upload Example</title>
+  <!-- Include the ImgBB upload script -->
+  <script async src="https://imgbb.com/upload.js"></script>
+</head>
+<body>
+  <h1>Image Upload Example</h1>
+
+  <!-- Add a button to trigger the image upload -->
+  <button onclick="openImgbbUploader()">Upload Image</button>
+
+  <!-- Display the uploaded image (optional) -->
+  <div id="uploadedImage"></div>
+
+  <!-- Include any additional content or elements as needed -->
+
+  <script>
+    // Function to open the ImgBB uploader
+    function openImgbbUploader() {
+      const imgbbUploader = new ImgBBUploader({
+        apiKey: '51bf640f51b71c032a341eac6b34520e', // Replace with your ImgBB API key
+        lang: 'en', // Language code (optional)
+        expiration: 120, // Expiration time for uploaded images in seconds (optional)
+        onSuccess: function (result) {
+          // Handle the successful upload, e.g., display the uploaded image
+          const uploadedImage = document.getElementById('uploadedImage');
+          uploadedImage.innerHTML = `<img src="${result.url}" alt="Uploaded Image">`;
+        },
+        onError: function (error) {
+          // Handle errors during the upload
+          console.error('ImgBB Upload Error:', error);
+        },
+      });
+
+      // Open the ImgBB uploader
+      imgbbUploader.open();
+    }
+  </script>
+</body>
+</html>
