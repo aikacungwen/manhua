@@ -43,9 +43,10 @@
       border-radius: 5px;
     }
 
-    #uploadedImage {
-      margin-top: 20px;
-      text-align: center;
+    #uploadedImage img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
     }
 
     #directLink {
@@ -89,10 +90,14 @@
         .then(response => response.json())
         .then(data => {
           // Handle the successful upload
-          uploadedImage.innerHTML = `<img src="${data.data.url}" alt="Uploaded Image">`;
+          const imageUrl = data.data.url;
+          const imgElement = document.createElement('img');
+          imgElement.src = imageUrl;
+          uploadedImage.innerHTML = '';
+          uploadedImage.appendChild(imgElement);
 
           // Display the direct link to the uploaded image
-          directLink.innerHTML = `Direct Link: <a href="${data.data.url}" target="_blank">${data.data.url}</a>`;
+          directLink.innerHTML = `Direct Link: <a href="${imageUrl}" target="_blank">${imageUrl}</a>`;
         })
         .catch(error => {
           // Handle errors during the upload
