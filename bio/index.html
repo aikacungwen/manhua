@@ -4,38 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ImgBB Upload Example</title>
-  <!-- Include the ImgBB upload script -->
-  <script async src="https://imgbb.com/upload.js"></script>
 </head>
 <body>
   <h1>Image Upload Example</h1>
 
-  <!-- Add a button to trigger the image upload -->
-  <button onclick="openImgbbUploader()">Upload Image</button>
+  <!-- Input file and button to trigger the image upload -->
+  <input type="file" id="imageInput" accept="image/*">
+  <button onclick="uploadImage()">Upload Image</button>
 
   <!-- Display the uploaded image (optional) -->
   <div id="uploadedImage"></div>
 
   <script>
-    // Function to open the ImgBB uploader
-    function openImgbbUploader() {
-      const imgbbUploader = new ImgBBUploader({
-        apiKey: '51bf640f51b71c032a341eac6b34520e', // Replace with your ImgBB API key
-        lang: 'en', // Language code (optional)
-        expiration: 120, // Expiration time for uploaded images in seconds (optional)
-        onSuccess: function (result) {
+    function uploadImage() {
+      const imageInput = document.getElementById('imageInput');
+      const uploadedImage = document.getElementById('uploadedImage');
+
+      // Check if a file is selected
+      if (imageInput.files.length > 0) {
+        const file = imageInput.files[0];
+        const formData = new FormData();
+        formData.append('image', file);
+
+        // Make a POST request to ImgBB API
+        fetch('https://api.imgbb.com/1/upload?key=51bf640f51b71c032a341eac6b34520e', {
+          method: 'POST',
+          body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
           // Handle the successful upload, e.g., display the uploaded image
-          const uploadedImage = document.getElementById('uploadedImage');
-          uploadedImage.innerHTML = `<img src="${result.url}" alt="Uploaded Image">`;
-        },
-        onError: function (error) {
+          uploadedImage.innerHTML = `<img src="${data.data.url}" alt="Uploaded Image">`;
+        })
+        .catch(error => {
           // Handle errors during the upload
           console.error('ImgBB Upload Error:', error);
-        },
-      });
-
-      // Open the ImgBB uploader
-      imgbbUploader.open();
+        });
+      } else {
+        console.error('No file selected.');
+      }
     }
   </script>
 </body>
