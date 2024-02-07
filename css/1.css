@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; /* Tambahkan scrollbar horizontal jika tab melebihi lebar layar */
+}
+
+.tabs a {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    margin: 5px;
+}
+
+.tabs a.active {
+    background-color: #4CAF50;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.page-title {
+    text-align: center;
+    position: absolute;
+    top: calc(100% + 20px); /* Letakkan di bawah video */
+    left: 50%; /* Pusatkan horizontalnya */
+    transform: translateX(-50%); /* Pusatkan horizontalnya */
+}
+
+.separator {
+    clear: both;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.thumbnail img {
+    display: block;
+    border: 0;
+    height: 320px;
+    width: auto;
+    margin: 0 auto;
+}
+
+#synopsis {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#extra-info {
+    text-align: center;
+}
+
+#extra-info div {
+    margin-bottom: 10px;
+}
