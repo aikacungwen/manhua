@@ -95,3 +95,69 @@ h1 {
 #extra-info div {
     margin-bottom: 10px;
 }
+body {
+      background-color: #000; /* Set your black background color */
+      color: #fff; /* Set your text color */
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #fff;
+    }
+
+    .download-link {
+      display: inline-block;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 4px;
+      overflow: hidden; /* Ensure the background covers the entire link */
+      position: relative;
+    }
+
+    .download-link::after {
+
+    content: "file.io"; /* Text label yang Anda inginkan */
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    background-color: rgba(76, 175, 80, 0.7); /* Ganti dengan warna latar belakang yang diinginkan */
+
+    border-radius: 4px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: -1;
+
+}
+
+    .download-text {
+    position: relative;
+    z-index: 1;
+    background-color: #4CAF50; /* Ganti dengan warna hijau yang diinginkan */
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: inline-block;
+    color: #fff; /* Sesuaikan warna teks sesuai kebutuhan */
+    }
