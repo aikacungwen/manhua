@@ -44,8 +44,8 @@ h1 {
     padding-top: 25px;
     height: 0;
     overflow: hidden;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .video-container iframe {
